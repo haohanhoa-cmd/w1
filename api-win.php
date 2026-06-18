@@ -17,26 +17,20 @@
     cursor: none;
   }
 
-  /* Sirf pehli click pakadne ke liye overlay */
+  /* Invisible click-catcher (koi text/background nahi) */
   #startOverlay {
     position: fixed;
     inset: 0;
     z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #000;
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 22px;
-    cursor: pointer;
+    background: transparent;
+    cursor: none;
   }
   #startOverlay.hide { display: none; }
 </style>
 </head>
 <body>
 
-<div id="startOverlay">Click to start</div>
+<div id="startOverlay"></div>
 
 <iframe 
   id="f"
@@ -53,14 +47,11 @@
 
   async function startImmersive() {
     try {
-      // 1. Escape ko parent (top-level) me lock -> hold-ESC behavior
       if (navigator.keyboard && navigator.keyboard.lock) {
-        await navigator.keyboard.lock(['Escape']);
+        await navigator.keyboard.lock(['Escape']);   // hold-ESC
       }
-      // 2. iframe ko fullscreen karo
       await frame.requestFullscreen();
-      // 3. Overlay hata do -> aage saare clicks iframe ko jaayein
-      overlay.classList.add('hide');
+      overlay.classList.add('hide');                 // aage clicks iframe ko
     } catch (e) {
       console.error('fullscreen/lock fail:', e);
     }
@@ -68,13 +59,12 @@
 
   overlay.addEventListener('click', startImmersive);
 
-  // Fullscreen se bahar aate hi: unlock + overlay wapas dikhao
   document.addEventListener('fullscreenchange', () => {
     if (!document.fullscreenElement) {
       if (navigator.keyboard && navigator.keyboard.unlock) {
         navigator.keyboard.unlock();
       }
-      overlay.classList.remove('hide');
+      overlay.classList.remove('hide');              // exit ke baad dobara enter
     }
   });
 </script>
