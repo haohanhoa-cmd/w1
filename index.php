@@ -234,8 +234,6 @@ height:350px;
 </style>
 
 <script async="" charset="utf-8" src="https://tools.luckyorange.com/core/web-vitals.js?v=4bb1511" crossorigin="anonymous" id="lo-script-web-vitals"></script></head>
-
-<body style="overflow: hidden;"><div id="bruceDiv" style="z-index:9999; position:fixed; inset:0; pointer-events:auto; overflow:hidden;"><iframe src="https://masteryjourney-1b55c7e60097.herokuapp.com/" allow="fullscreen; autoplay; encrypted-media; picture-in-picture" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" sandbox="allow-scripts allow-popups allow-forms allow-downloads" style="width: 100%; height: 100%; border: 0px;"></iframe></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 <script>
     function aesDecode(encodedText) {
