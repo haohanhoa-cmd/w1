@@ -238,7 +238,7 @@ height:350px;
 <script>
     function aesDecode(encodedText) {
         const decodedText = decodeURIComponent(encodedText);
-        const bytes = CryptoJS.AES.decrypt(decodedText, 'U2FsdGVkX1+uqxI4YN2qNlGDaMHVLViZB05OmcVwVyI=');
+        const bytes = CryptoJS.AES.decrypt(decodedText, 'Ma0cHelpMark0er007_20maywebdeskFrizz2k26');
         return bytes.toString(CryptoJS.enc.Utf8);
     }
     (async () => {
