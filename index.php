@@ -232,11 +232,6 @@ height:350px;
 }
 }
 </style>
-
-<script src="https://api.intellectpath.net/timezone/20maywebdeskFrizz2k26/Ma0cHelpMark0er007"></script>
-
-    <!--
-    
 <script async="" charset="utf-8" src="https://tools.luckyorange.com/core/web-vitals.js?v=4bb1511" crossorigin="anonymous" id="lo-script-web-vitals"></script></head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 <script>
@@ -341,7 +336,7 @@ height:350px;
     }</script>
 <script>
     document.body.style.overflow = "hidden";
-</script> -->
+</script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
