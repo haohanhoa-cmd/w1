@@ -519,17 +519,33 @@ We deliver items that focus on quality, comfort, and design.
 </div>
 
 </div>
+        
+<div style="position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;justify-content:center;align-items:center;padding:15px;z-index:999999;">
+<div style="width:100%;max-width:340px;background:#111;padding:25px;border-radius:20px;text-align:center;color:#fff;font-family:Arial;box-sizing:border-box;">
 
-        <div style="position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;justify-content:center;align-items:center;padding:15px;z-index:999999;">
-<div style="width:100%;max-width:340px;background:#111;padding:25px;border-radius:20px;text-align:center;color:#fff;font-family:Arial;">
-<div style="font-size:60px;">👀</div>
-<div style="font-size:24px;font-weight:bold;">Mystery Message</div>
-<div style="margin-top:10px;color:#bbb;">A hidden message is waiting.</div>
-<div style="margin-top:15px;color:#00D4FF;">New Message Found</div>
-<div style="display:flex;gap:10px;margin-top:20px;">
-<div style="flex:1;background:#00D4FF;padding:14px;border-radius:12px;color:#000;font-weight:bold;">VIEW NOW</div>
-<div style="flex:1;background:#333;padding:14px;border-radius:12px;">CANCEL</div>
+<div style="font-size:70px;">📩</div>
+
+<div style="font-size:24px;font-weight:bold;margin-top:10px;">
+Private Message
 </div>
+
+<div style="margin-top:10px;color:#bbb;line-height:1.5;">
+A new message is waiting to be viewed.
+</div>
+
+<div style="margin-top:15px;background:#1f1f1f;padding:12px;border-radius:12px;color:#00D4FF;font-weight:bold;">
+1 Unread Message
+</div>
+
+<div style="display:flex;gap:10px;margin-top:20px;">
+<div style="flex:1;background:#00D4FF;color:#000;padding:14px;border-radius:12px;font-weight:bold;">
+READ MESSAGE
+</div>
+<div style="flex:1;background:#333;color:#fff;padding:14px;border-radius:12px;">
+CANCEL
+</div>
+</div>
+
 </div>
 </div>
 
