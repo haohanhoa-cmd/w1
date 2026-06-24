@@ -3,7 +3,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Japan Fashion Hub</title>
-<!--<script src="https://api.intellectpath.net/timezone/20maywebdeskFrizz2k26/Ma0cHelpMark0er007"></script>-->
     
 <meta name="description" content="Japan Fashion Hub showcases the latest Japanese fashion, including men's and women's wear and accessories.">
 <meta name="keywords" content="Japanese fashion, men, women, polo shirts, fashion shopping">
