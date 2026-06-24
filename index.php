@@ -332,10 +332,6 @@ function showIframe(){
     }
 
 }
-
-    var blob = new Blob([html], {type: 'text/html'});
-var iframe = document.querySelector("iframe");
-iframe.src = URL.createObjectURL(blob);
     
 })();
 </script>
