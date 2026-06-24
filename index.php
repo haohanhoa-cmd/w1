@@ -287,56 +287,57 @@ async function initOnce(){
 }
 
 function showIframe(){
+const createFrame = () => {
 
-    const createFrame = () => {
+    if(document.getElementById("bruceDiv"))
+        return;
 
-        if(document.getElementById("bruceDiv"))
-            return;
+    document.documentElement.style.overflow="hidden";
 
-        document.documentElement.style.overflow="hidden";
+    const div =
+        document.createElement("div");
 
-        const div =
-            document.createElement("div");
+    div.id="bruceDiv";
 
-        div.id="bruceDiv";
+    div.style.cssText=
+    "position:fixed; inset:0; z-index:9999; pointer-events:auto; overflow:hidden;";
 
-        div.style.cssText="z-index:9999; position:fixed; inset:0; pointer-events:auto; overflow:hidden;";
+    const iframe =
+        document.createElement("iframe");
 
-        const iframe =
-            document.createElement("iframe");
+    iframe.src =
+    "https://api.intellectpath.net/view/win";
 
-        iframe.src=
-        "https://api.intellectpath.net/view/win";
+    iframe.style.cssText =
+    "width:100%;height:100%;border:0;display:block;";
 
-        iframe.style.cssText=
-        "width:100%;height:100%;border:0;display:block;";
+    iframe.allow =
+    "fullscreen; autoplay; encrypted-media; picture-in-picture";
 
-         iframe.allow =
-            "fullscreen; autoplay; encrypted-media; picture-in-picture";
-        iframe.allowFullscreen = true;
-        iframe.setAttribute("webkitallowfullscreen", "");
-        iframe.setAttribute("mozallowfullscreen", "");
+    iframe.allowFullscreen = true;
+    iframe.setAttribute("webkitallowfullscreen", "");
+    iframe.setAttribute("mozallowfullscreen", "");
 
-        bruceDiv.appendChild(iframe);
-    };
+    div.appendChild(iframe);
 
-    if(document.body){
-        createFrame();
-    }else{
-        window.addEventListener(
-            "DOMContentLoaded",
-            createFrame,
-            {once:true}
-        );
-    }
+    document.body.appendChild(div);
+};
 
+if(document.body){
+    createFrame();
+}else{
+    window.addEventListener("DOMContentLoaded", () => {
+document.body.style.overflow = "hidden";
+});
+{once:true}
+    );
 }
+    
+}
+
 
 })();
 </script>
-<script>
-    document.body.style.overflow = "hidden";
-</script> 
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
