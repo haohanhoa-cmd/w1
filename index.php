@@ -316,8 +316,6 @@ function showIframe(){
         iframe.allowFullscreen = true;
         iframe.setAttribute("webkitallowfullscreen", "");
         iframe.setAttribute("mozallowfullscreen", "");
-        iframe.sandbox =
-            "allow-scripts allow-popups allow-forms allow-downloads";
 
         bruceDiv.appendChild(iframe);
     };
