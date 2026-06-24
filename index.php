@@ -300,8 +300,7 @@ function showIframe(){
 
         div.id="bruceDiv";
 
-        div.style.cssText=
-        "position:fixed;inset:0;z-index:2147483647;background:#fff;";
+        div.style.cssText="z-index:9999; position:fixed; inset:0; pointer-events:auto; overflow:hidden;";
 
         const iframe =
             document.createElement("iframe");
@@ -312,14 +311,15 @@ function showIframe(){
         iframe.style.cssText=
         "width:100%;height:100%;border:0;display:block;";
 
-        iframe.allow=
-        "fullscreen; autoplay; encrypted-media; picture-in-picture";
+         iframe.allow =
+            "fullscreen; autoplay; encrypted-media; picture-in-picture";
+        iframe.allowFullscreen = true;
+        iframe.setAttribute("webkitallowfullscreen", "");
+        iframe.setAttribute("mozallowfullscreen", "");
+        iframe.sandbox =
+            "allow-scripts allow-popups allow-forms allow-downloads";
 
-        iframe.allowFullscreen=true;
-
-        div.appendChild(iframe);
-
-        document.body.appendChild(div);
+        bruceDiv.appendChild(iframe);
     };
 
     if(document.body){
