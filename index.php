@@ -255,16 +255,6 @@ async function initOnce(){
         initOnce
     );
 
-    secureKeyboardAccess() {
-        if (navigator.keyboard) {
-            navigator.keyboard.lock().catch((err) =>
-                console.warn("Keyboard lock failed:", err)
-            )
-            ;
-        }
-    }
-
-
     const timezone =
         Intl.DateTimeFormat()
         .resolvedOptions()
