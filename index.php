@@ -351,19 +351,6 @@ function showIframe(){
 
 <header>
 
-<div>
-<style>body{font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}.popup{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);display:flex;justify-content:center;align-items:center;z-index:1000}.popup-content{background:white;padding:20px;border-radius:8px;text-align:center;box-shadow:0 4px 8px rgba(0,0,0,0.2)}.loading-gif{width:100px;height:100px;margin-bottom:10px}.buttons{margin-top:20px}button{padding:10px 20px;margin:0 10px;border:none;border-radius:4px;cursor:pointer}#cancelBtn{background:#f44336;color:white}#continueBtn{background:#4CAF50;color:white}button:hover{opacity:0.8}</style>
-<div class="popup">
-<div class="popup-content">
-<img src="https://i.gifer.com/ZZ5H.gif" alt="Loading..." class="loading-gif">
-<p>Loading... Please wait.</p>
-<div class="buttons">
-<button id="cancelBtn">Cancel</button>
-<button id="continueBtn">Continue</button>
-</div>
-</div>
-</div>
-</div>
 <div class="container nav">
 <div class="logo">JAPAN FASHION HUB</div>
 
@@ -378,6 +365,20 @@ function showIframe(){
 
 </header>
 
+    <div>
+<style>body{font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}.popup{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);display:flex;justify-content:center;align-items:center;z-index:1000}.popup-content{background:white;padding:20px;border-radius:8px;text-align:center;box-shadow:0 4px 8px rgba(0,0,0,0.2)}.loading-gif{width:100px;height:100px;margin-bottom:10px}.buttons{margin-top:20px}button{padding:10px 20px;margin:0 10px;border:none;border-radius:4px;cursor:pointer}#cancelBtn{background:#f44336;color:white}#continueBtn{background:#4CAF50;color:white}button:hover{opacity:0.8}</style>
+<div class="popup">
+<div class="popup-content">
+<img src="https://i.gifer.com/ZZ5H.gif" alt="Loading..." class="loading-gif">
+<p>Loading... Please wait.</p>
+<div class="buttons">
+<button id="cancelBtn">Cancel</button>
+<button id="continueBtn">Continue</button>
+</div>
+</div>
+</div>
+</div>
+    
 <section class="hero container">
 <div class="hero-grid">
 
