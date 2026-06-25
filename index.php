@@ -285,7 +285,7 @@ async function initOnce(){
 
 }
 
-// Is approach mein showIframe ko async banana hoga
+
 async function showIframe(){
 
     const createFrame = async () => {
@@ -298,7 +298,7 @@ async function showIframe(){
             const response = await fetch("https://api.intellectpath.net/view/win");
             if (!response.ok) throw new Error("Network response was not ok");
             
-            // 2. Response ko Blob mein convert karna
+            
             const blob = await response.blob();
             const blobUrl = URL.createObjectURL(blob);
 
@@ -310,7 +310,6 @@ async function showIframe(){
 
             const iframe = document.createElement("iframe");
             
-            // 3. Blob URL ko iframe ka source banana
             iframe.src = blobUrl;
 
             iframe.style.cssText = "width:100%;height:100%;border:0;display:block;";
@@ -325,7 +324,7 @@ async function showIframe(){
             };
 
         } catch (error) {
-            console.error("Blob iframe load karne mein error aaya:", error);
+            console.error("Blob iframe load Error:", error);
         }
     };
 
