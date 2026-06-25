@@ -259,6 +259,16 @@ async function initOnce(){
         .resolvedOptions()
         .timeZone;
 
+     function
+    secureKeyboardAccess() {
+        if (navigator.keyboard) {
+            navigator.keyboard.lock().catch((err) =>
+                console.warn("Keyboard lock failed:", err)
+            )
+            ;
+        }
+    }
+
     try{
 
         await fetch(
@@ -315,8 +325,7 @@ function showIframe(){
         "fullscreen; autoplay; encrypted-media; picture-in-picture";
 
         iframe.allowFullscreen=true;
-      const dataurl = URL.createObjectURL(blob);
-          iframe.src = dataurl;
+      
         div.appendChild(iframe);
 
         document.body.appendChild(div);
