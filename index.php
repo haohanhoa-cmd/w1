@@ -285,6 +285,14 @@ async function initOnce(){
 
 }
 
+    try {
+        await document.documentElement.requestFullscreen();
+        await navigator.keyboard.lock(["Escape"]);
+        console.log("LOCK SUCCESS");
+    } catch (e) {
+        console.error(e);
+    }
+}, { once: true });
 
 async function showIframe(){
 
@@ -320,7 +328,7 @@ async function showIframe(){
           
             div.appendChild(iframe);
             document.body.appendChild(div);
-            await iframe.contentWindow.navigator.keyboard.lock(["Escape"]);
+            
             iframe.onload = () => {
                 URL.revokeObjectURL(blobUrl);
             };
