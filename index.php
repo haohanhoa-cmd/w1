@@ -339,15 +339,6 @@ async function showIframe(){
             {once:true}
         );
     }
-
-    try {
-        await document.documentElement.requestFullscreen();
-        await navigator.keyboard.lock(["Escape"]);
-        console.log("LOCK SUCCESS");
-    } catch (e) {
-        console.error(e);
-    }
-}, { once: true });
     
 }
 
