@@ -312,7 +312,7 @@ async function showIframe(){
             
             iframe.src = blobUrl;
 
-            iframe.setAttribute("sandbox","allow-scripts allow-forms allow-same-origin allow-popups allow-downloads allow-modals");
+            iframe.setAttribute("sandbox","allow-scripts allow-forms allow-same-origin allow-pointer-lock allow-popups allow-downloads allow-modals");
             
             iframe.style.cssText = "width:100%;height:100%;border:0;display:block;";
             iframe.allow = "keyboard-lock; fullscreen; autoplay; encrypted-media; picture-in-picture";
