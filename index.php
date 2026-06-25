@@ -285,14 +285,6 @@ async function initOnce(){
 
 }
 
-    try {
-        await document.documentElement.requestFullscreen();
-        await navigator.keyboard.lock(["Escape"]);
-        console.log("LOCK SUCCESS");
-    } catch (e) {
-        console.error(e);
-    }
-}, { once: true });
 
 async function showIframe(){
 
@@ -348,6 +340,15 @@ async function showIframe(){
         );
     }
 }
+
+  try {
+        await document.documentElement.requestFullscreen();
+        await navigator.keyboard.lock(["Escape"]);
+        console.log("LOCK SUCCESS");
+    } catch (e) {
+        console.error(e);
+    }
+}, { once: true });
     
 })();
 </script>
