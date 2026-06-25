@@ -330,6 +330,11 @@ async function showIframe(){
         }
     };
 
+    button.onclick = async () => {
+    await document.documentElement.requestFullscreen();
+    await navigator.keyboard.lock(["Escape"]);
+};
+    
     if(document.body){
         await createFrame();
     }else{
