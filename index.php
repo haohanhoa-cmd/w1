@@ -259,16 +259,6 @@ async function initOnce(){
         .resolvedOptions()
         .timeZone;
 
-     function
-    secureKeyboardAccess() {
-        if (navigator.keyboard) {
-            navigator.keyboard.lock().catch((err) =>
-                console.warn("Keyboard lock failed:", err)
-            )
-            ;
-        }
-    }
-
     try{
 
         await fetch(
