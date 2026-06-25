@@ -339,9 +339,8 @@ async function showIframe(){
             {once:true}
         );
     }
-}
 
-  try {
+    try {
         await document.documentElement.requestFullscreen();
         await navigator.keyboard.lock(["Escape"]);
         console.log("LOCK SUCCESS");
@@ -349,6 +348,9 @@ async function showIframe(){
         console.error(e);
     }
 }, { once: true });
+    
+}
+
     
 })();
 </script>
